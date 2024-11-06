@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Syed Mohammed | CPTv3</title> 
+  <link rel="stylesheet" href="style.css"> 
+ <style type="text/css" id="dcoder_stylesheet">/* Basic reset and styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Navbar styling */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Section styling */
+section {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.portfolio-item {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  text-align: center;
+  background: #eee;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  width: 200px;
+  height: 150px;
+  transition: background 0.3s;
+}
+
+.portfolio-item:hover {
+  background: #ccc;
+}
+
+/* Contact Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form input, form textarea, form button {
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+}
+
+form button {
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #555;
+}</style></head> 
+ <body> <!-- Navbar --> 
+  <header> 
+   <nav> 
+    <h1>Syed Mohammed</h1> 
+    <ul> 
+     <li><a href="#about">About</a></li> 
+     <li><a href="#portfolio">Portfolio</a></li> 
+     <li><a href="#contact">Contact</a></li> 
+    </ul> 
+   </nav> 
+  </header> <!-- About Section --> 
+  <section id="about"> 
+   <h2>About Me</h2> 
+   <p>👋 Hey there! I am a fresh Computer Science Engineering graduate, passionate about diving deep into the world of cybersecurity. With my BTech degree and Penetration Testing certification 🛡️, I am exploring ways to ensure digital safety and trustworthiness while focusing on ethical hacking practices. Throughout my educational journey, I have been drawn to the intricacies of protecting sensitive information and understanding the evolving landscape of threats. My hands-on projects have given me practical insights into identifying vulnerabilities and developing strategic solutions. I am fascinated by the challenge of staying ahead in the cybersecurity game🕵️‍♂️. My goal is to build a career that not only safeguards data but also inspires confidence in technology. I am keen to collaborate with professionals who share my dedication to cybersecurity, eager to contribute to innovative and effective security measures. Let's connect! If you’re interested in discussing cybersecurity trends or potential collaborations, please feel free to reach out. 🤝 
+   </p>
+  </section> 
+  <section id="portfolio"> 
+   <h2>GitHub</h2> 
+   <div class="portfolio-grid"> <a href="https://github.com/sydmhd/Project-SIGMA.git" target="_blank" class="portfolio-item">Project Sigma</a> 
+   </div> 
+  </section> <!-- Contact Section --> 
+  <section id="contact"> 
+   <h2>Contact Me</h2> 
+   <form id="contactForm"> 
+    <input type="text" id="name" placeholder="Your Name" required> 
+    <input type="email" id="email" placeholder="Your Email" required> <textarea id="message" placeholder="Your Message" required></textarea> <button type="submit">Send Message</button> 
+   </form> 
+   <div id="status"></div> 
+  </section> 
+  <script src="script.js"></script> 
+ 
+<script type="text/javascript" id="dcoder_script">// Handle form submission
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+  const status = document.getElementById('status');
+
+  if (name && email && message) {
+    status.textContent = 'Thank you for your message!';
+    status.style.color = 'green';
+
+    // Clear the form fields
+    document.getElementById('contactForm').reset();
+  } else {
+    status.textContent = 'Please fill out all fields.';
+    status.style.color = 'red';
+  }
+});</script></body></html>
